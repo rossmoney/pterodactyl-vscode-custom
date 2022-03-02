@@ -1,17 +1,5 @@
 FROM ghcr.io/parkervcp/yolks:nodejs_17
 
 ENV DEBIAN_FRONTEND=noninteractive
-ENV AGENT_ALLOW_RUNASROOT=1
 
-RUN apt update && apt install sudo
-RUN sudo apt-get -y install texlive-full htop nano
-
-USER container
-ENV  USER container
-ENV HOME /home/container
-
-WORKDIR /home/container
-
-COPY ./entrypoint.sh /entrypoint.sh
-
-CMD ["/bin/ash", "/entrypoint.sh"]
+RUN apt update && apt -y install texlive-full htop nano
