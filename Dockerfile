@@ -1,5 +1,8 @@
 FROM ghcr.io/parkervcp/yolks:nodejs_17
 
+ENV DEBIAN_FRONTEND=noninteractive
+ENV AGENT_ALLOW_RUNASROOT=1
+
 RUN apt update && apt install sudo
 RUN sudo apt-get -y install texlive-full htop nano
 
