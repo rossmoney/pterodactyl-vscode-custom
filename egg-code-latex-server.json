@@ -10,7 +10,7 @@
     "description": "Run VS Code on any machine anywhere and access it in the browser.",
     "features": null,
     "images": [
-        "ghcr.io\/rossmoney\/pterodactyl-vscode-custom:master",
+        "ghcr.io\/rossmoney\/pterodactyl-vscode-custom:main",
         "ghcr.io\/parkervcp\/yolks:nodejs_17",
     ],
     "file_denylist": [],
