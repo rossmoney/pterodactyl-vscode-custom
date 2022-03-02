@@ -1,6 +1,6 @@
 FROM ghcr.io/parkervcp/yolks:nodejs_17
 
-RUN sudo apt-get update
+RUN apt update && apt install sudo
 RUN sudo apt-get -y install texlive-full htop nano
 
 USER container
